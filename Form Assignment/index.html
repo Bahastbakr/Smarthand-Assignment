@@ -31,77 +31,95 @@
         <h6 class="align-self-center m-2">Smart Hand.Co</h6>
     </header>
 
-    <div class=" mt-4">
+    <div class=" mt-4 m-lg-5 ">
         <h5>زیادکردنی گرێبەستی کڕین و فرۆشتن + لیستی گرێبەستەکان</h5>
-        <div class="d-flex flex-row flex-wrap m-4">
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
+        <form class="d-flex flex-column flex-wrap m-lg-5 justify-content-between">
+
+            <div class="form-group form-floating  m-4">
+                <input type="text" class="form-control" id="firstSide" placeholder="لایەنی یەکەم (فرۆشیار)">
+                <label for="firstSide">لایەنی یەکەم (فرۆشیار)</label>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی دووەم(کڕیار)" required />
-                <label for="name" class="form__label">لایەنی دووەم(کڕیار)</label>
+            <div class="form-group form-floating  m-4">
+                <input type="text" class="form-control" id="secondSide" placeholder="لایەنی دووەم (کڕیار)">
+                <label for="secondSide">لایەنی دووەم (کڕیار)</label>
             </div>
-            <div class="form__group field">
-                <input type="number" class="form__field" placeholder="نرخی فرۆشتن" required />
-                <label for="name" class="form__label">نرخی فرۆشتن</label>
+
+            <div class="d-flex flex-lg-row flex-column flex-lg-nowrap flex-wrap">
+                <div class="form-group form-floating m-4    m-lg-4">
+                    <input type="number" class="form-control" id="sellingPrice" placeholder="نرخی فرۆشتن">
+                    <label for="sellingPrice">نرخی فرۆشتن</label>
+                </div>
+
+                <div class="form-group form-floating m-4    m-lg-4">
+                    <input type="text" class="form-control" id="sellingPriceText" placeholder="نرخی فرۆشتن بە نووسین">
+                    <label for="sellingPriceText">نرخی فرۆشتن بە نووسین"</label>
+                </div>
+
+                <div class="form-group form-floating  m-4    m-lg-4">
+                    <input type="number" class="form-control" id="givenPrice" placeholder="بڕی پێشەکی وەرگیراو">
+                    <label for="givenPrice">بڕی پێشەکی وەرگیراو</label>
+
+                </div>
+                <div class="form-group form-floating m-4   m-lg-4">
+                    <input type="number" class="form-control" id="remainingPrice" placeholder="بڕی پارەی ماوە">
+                    <label for="remainingPrice">بڕی پارەی ماوە</label>
+
+                </div>
+                <div class="form-group form-floating m-4    m-lg-4">
+                    <input type="number" class="form-control" id="latePrice" placeholder="غەرامەی دواکەوتن">
+                    <label for="latePrice">غەرامەی دواکەوتن</label>
+
+                </div>
+                <div class="form-group form-floating m-4    m-lg-4">
+                    <input type="number" class="form-control" id="regretPrice" placeholder="غەرامەی پاشگەزبونەوە">
+                    <label for="regretPrice">غەرامەی پاشگەزبونەوە</label>
+                </div>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">نرخی فرۆشتن بە نووسین</label>
+            <div class="w-50 m-4">
+                <select class="form-select" id="floatingSelect" aria-label="جۆری دراو">
+                    <option value="1" selected>جۆری دراو</option>
+                    <option value="1">دۆلار</option>
+                    <option value="2">دینار</option>
+                    <option value="3">یۆرۆ</option>
+                </select><br>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
+            <div class="d-flex flex-lg-row flex-column flex-lg-nowrap flex-wrap">
+
+                <div class="form-group form-floating m-4 w-100   m-lg-4">
+                    <input type="text" class="form-control" placeholder="ناوی پارێزەر">
+                    <label for="floatingInput">ناوی پارێزەر</label>
+                </div>
+                <div class="form-group form-floating m-4 w-100   m-lg-4">
+                    <input type="number" class="form-control" placeholder="بڕی پارەی رێکخەر">
+                    <label for="floatingInput">بڕی پارەی رێکخەر</label>
+                </div>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
+
+            <div class="form-floating  m-4 ">
+                <textarea class="form-control" placeholder="تێبینییەک بەجێبهێلە لێرەدا" id="floatingTextarea2"
+                    style="height: 90px"></textarea>
+                <label for="floatingTextarea2">تێبینی</label>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
+
+            <div class="d-flex flex-lg-row flex-column flex-lg-nowrap flex-wrap">
+                <div class="form-group form-floating m-4 w-100   m-lg-4">
+                    <input type="text" class="form-control" placeholder="پاشەکەوتکردن">
+                    <label for="floatingInput">پاشەکەوتکردن</label>
+                </div>
+                <div class="form-group form-floating m-4 w-100   m-lg-4">
+                    <input type="number" class="form-control" placeholder="پاککردنەوە">
+                    <label for="floatingInput">پاککردنەوە</label>
+                </div>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
+            <div class="d-flex m-4 flex-row justify-content-end">
+                <button style="width: 200px;" class=" btn text-light bg-smarthand" type="button">ناردن</button>
             </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-            <div class="form__group field">
-                <input type="input" class="form__field" placeholder="لایەنی یەکەم(فرۆشیار)" required />
-                <label for="name" class="form__label">لایەنی یەکەم(فرۆشیار)</label>
-            </div>
-        </div>
+
+
+        </form>
     </div>
 
-    <footer>@BahastAbubakr@</footer>
+    <!-- <footer>@BahastAbubakr@</footer> -->
 
     <script src="../resources/js/bootstrap.min.js">
     </script>

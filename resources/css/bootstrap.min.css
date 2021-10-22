@@ -2248,11 +2248,11 @@ progress {
     color: #212529;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: .25rem;
+    border: none;
+    border-bottom:  1px solid #09a0d3;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -2273,9 +2273,10 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
+    border-bottom-color: #09a0d3;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+    border-bottom:  2px solid #09a0d3;
+
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2458,8 +2459,9 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
-    border: 1px solid #ced4da;
+    border: none;
     border-radius: .25rem;
+    border-bottom: 1px solid #09a0d3;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2473,9 +2475,8 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-    border-color: #86b7fe;
+    border-color: #09a0d3;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
 }
 
 .form-select[multiple],
@@ -2549,14 +2550,14 @@ textarea.form-control-lg {
 }
 
 .form-check-input:focus {
-    border-color: #86b7fe;
+    border-color: #09a0d3;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
 }
 
 .form-check-input:checked {
-    background-color: #0d6efd;
-    border-color: #0d6efd
+    background-color: #09a0d3;
+    border-color: #09a0d3
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -2568,8 +2569,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type=checkbox]:indeterminate {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #09a0d3;
+    border-color: #09a0d3;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
@@ -2748,7 +2749,7 @@ textarea.form-control-lg {
 .form-floating>label {
     position: absolute;
     top: 0;
-    left: 0;
+    right:0;
     height: 100%;
     padding: 1rem .75rem;
     pointer-events: none;
@@ -2782,7 +2783,7 @@ textarea.form-control-lg {
 
 .form-floating>.form-control:focus,
 .form-floating>.form-control:not(:placeholder-shown) {
-    padding-top: 1.625rem;
+    padding-top: 2.625rem;
     padding-bottom: .625rem
 }
 
@@ -2798,19 +2799,19 @@ textarea.form-control-lg {
 
 .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
     opacity: .65;
-    transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    transform: scale(.85) translateY(-1rem) translateX(2rem)
 }
 
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
     opacity: .65;
-    transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    transform: scale(.85) translateY(-1rem) translateX(2rem)
 }
 
 .form-floating>.form-control:-webkit-autofill~label {
     opacity: .65;
-    transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    transform: scale(.85) translateY(-1rem) translateX(2rem)
 }
 
 .input-group {
